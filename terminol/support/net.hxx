@@ -25,7 +25,7 @@ public:
         virtual void serverDisconnected(int id) = 0;
 
     protected:
-        ~I_Observer() {}
+        ~I_Observer() = default;
     };
 
 private:
@@ -148,7 +148,7 @@ public:
         virtual void clientQueueEmpty() = 0;
 
     protected:
-        ~I_Observer() {}
+        ~I_Observer() = default;
     };
 
 private:
